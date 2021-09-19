@@ -1,3 +1,8 @@
-import { createStore } from "redux"
-import countReducer from "./count_reducer"
-export default createStore(countReducer)
+import { createStore, combineReducers } from "redux"
+import countReducer from "./reducer/count"
+import personReducer from "./reducer/person"
+const allReducer = combineReducers({
+    he: countReducer,
+    rens: personReducer
+})
+export default createStore(allReducer)

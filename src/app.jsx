@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import Count from "./containers/count/index"
-import store from "./redux/store"
+import Person from "./containers/person/index"
 export default class app extends Component {
     render() {
         return (
             <div>
-            <Count store={store}></Count>
+            <Count ></Count>
+            <Person></Person>
             </div>
         )
     }

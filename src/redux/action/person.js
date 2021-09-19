@@ -1,0 +1,1 @@
+export const createJiarenAction = data => ({ type: "jiaren", data })
